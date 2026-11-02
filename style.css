@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fff7ed;
+  color: #431407;
+}
+
+.library {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.muted { color: #9a3412; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.controls input, .controls select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.controls input { flex: 1; min-width: 180px; }
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.stat {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ffedd5;
+  font-size: .9rem;
+}
+
+.table-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th, td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid #fed7aa;
+}
+
+th { background: #fed7aa; }
+
+.sql-box { margin-top: 16px; }
+
+.sql-box pre {
+  white-space: pre-wrap;
+  padding: 12px;
+  background: #431407;
+  color: #ffedd5;
+  border-radius: 8px;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Library</title>
+  <meta name="description" content="A book library backed by a real SQL database running in the page.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.3/sql-wasm.js"></script>
+  <main class="library">
+    <h1>📚 Book Library</h1>
+    <p id="status" class="muted">Loading the database…</p>
+    <div id="controls" class="controls"></div>
+    <div id="stats" class="stats"></div>
+    <div class="table-wrap"><table id="results"></table></div>
+    <details class="sql-box">
+      <summary>The SQL behind this view</summary>
+      <pre id="lastSql"></pre>
+    </details>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
